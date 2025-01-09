@@ -4,17 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        DisplayWelcomeMessage();
-
+        WelcomeMessage();
         string userName = UserName();
         int userNumber = UserNumber();
-
         int squareNumber = SquareNumber(userNumber);
-
-        DisplayResult(userName, squareNumber);
+        Result(userName, squareNumber);
     }
 
-    static void DisplayWelcomeMessage()
+    static void WelcomeMessage()
     {
         Console.WriteLine("Welcome to the program!");
     }
@@ -23,7 +20,6 @@ class Program
     {
         Console.Write("What is your name? ");
         string name = Console.ReadLine();
-
         return name;
     }
 
@@ -31,7 +27,6 @@ class Program
     {
         Console.Write("What is your favorite number: ");
         int number = int.Parse(Console.ReadLine());
-
         return number;
     }
 
@@ -40,9 +35,9 @@ class Program
         int square = number * number;
         return square;
     }
-    
-    static void DisplayResult(string name, int square)
+
+    static void Result(string name, int square)
     {
-        Console.WriteLine($"{name}, the square of your number is {square}");
+        Console.WriteLine($"{name}, your number squared is {square}");
     }
 }
