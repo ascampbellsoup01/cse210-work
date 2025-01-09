@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 50);
+        Random random = new Random();
+        int magicNumber = random.Next(1, 50);
 
-        int guess = -1;
+        int guess = 0;
 
         while (guess != magicNumber)
         {
