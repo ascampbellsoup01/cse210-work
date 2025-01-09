@@ -7,17 +7,17 @@ class Program
     {
         List<int> numbers = new List<int>();
         
-        int userNumber = -1;
-        while (userNumber != 0)
+        int user = -1;
+        while (user != 0)
         {
             Console.Write("Enter a number (0 to quit): ");
             
-            string userResponse = Console.ReadLine();
-            userNumber = int.Parse(userResponse);
+            string response = Console.ReadLine();
+            user = int.Parse(response);
             
-            if (userNumber != 0)
+            if (user != 0)
             {
-                numbers.Add(userNumber);
+                numbers.Add(user);
             }
         }
         int sum = 0;
