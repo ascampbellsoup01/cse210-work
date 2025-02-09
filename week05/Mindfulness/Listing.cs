@@ -35,9 +35,9 @@ class Listing : Activity
     {
         StartMessage(duration);
         Console.WriteLine(GetRandomPrompt());
-        PauseAnimation(3);
+        PauseAnimation(5);
         Console.WriteLine("Start listing items...");
-        PauseAnimation(3);
+        PauseAnimation(5);
         DateTime endTime = DateTime.Now.AddSeconds(duration);
         int itemCount = 0;
         while (DateTime.Now < endTime)

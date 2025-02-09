@@ -60,12 +60,12 @@ class Reflection : Activity
     {
         StartMessage(duration);
         Console.WriteLine(GetRandomPrompt());
-        PauseAnimation(3);
+        PauseAnimation(5);
         DateTime endTime = DateTime.Now.AddSeconds(duration);
         while (DateTime.Now < endTime)
         {
             Console.WriteLine(GetRandomQuestion());
-            PauseAnimation(6);
+            PauseAnimation(10);
         }
         EndMessage(duration);
     }
