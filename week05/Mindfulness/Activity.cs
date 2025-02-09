@@ -12,13 +12,13 @@ abstract class Activity
     public void StartMessage(int duration)
     {
         Console.WriteLine($"{Name} Activity\n{Description}\nDuration: {duration} seconds\nPrepare to begin...\n");
-        PauseAnimation(3);
+        PauseAnimation(5);
     }
 
     public void EndMessage(int duration)
     {
         Console.WriteLine($"Great job! You've completed the {Name} Activity for {duration} seconds.\n");
-        PauseAnimation(3);
+        PauseAnimation(5);
     }
 
     public void PauseAnimation(int seconds)
